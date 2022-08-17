@@ -1,0 +1,2 @@
+const EOF = Symbol('EOF');
+

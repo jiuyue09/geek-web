@@ -181,7 +181,7 @@ class TrunkedBodyParser {
                 }
                 this.current = this.WAITING_LENGTH_LINE_END;
             } else {
-                this.length *= 10;
+                this.length *= 16;
                 this.length += char.charCodeAt(0) - '0'.charCodeAt(0);
             }
         }
@@ -216,7 +216,7 @@ class TrunkedBodyParser {
 
 void async function() {
     let request = new Request({
-        method: 'POST',
+        method: 'GET',
         host: '127.0.0.1',
         port: '1000',
         headers: {
